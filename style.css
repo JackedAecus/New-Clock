@@ -1,0 +1,84 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+h1 {
+  font-family: monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+#clockContainer {
+  height: 40vw;
+  width: 40vw;
+  margin: auto;
+  margin-top: 70px;
+  background: url(ghadi.png) no-repeat;
+  background-size: 100%;
+}
+
+#hour,
+#minute,
+#second {
+  background-color: black;
+  position: relative;
+  border-radius: 10px;
+  transform-origin: bottom;
+}
+
+#hour {
+  height: 26%;
+  width: 1.2%;
+  top: 23%;
+  left: 49.2%;
+  opacity: 0.8;
+}
+
+#minute {
+  height: 31%;
+  width: 1.2%;
+  top: -7%;
+  left: 49.2%;
+  opacity: 0.8;
+}
+
+#second {
+  height: 31%;
+  width: 1.2%;
+  top: -38%;
+  left: 49.2%;
+  opacity: 0.8;
+  background-color: lightblue;
+}
